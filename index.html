@@ -363,8 +363,8 @@
 
     .note-card {
       margin-left: 94px;
-      width: 254px;
-      height: 220px;
+      width: 270px;
+      height: 250px;
     }
 
     /* ===== Mobile Styles ===== */
@@ -396,9 +396,9 @@
       }
 
       .note-card {
-        width: 368px;
-        height: 302px;
-        margin-left: 6px;
+        width: 363px;
+        height: 298px;
+        margin-left: 0px;
       }
 
       .note-card img {
@@ -419,6 +419,9 @@
 
       .filters .subject-select {
         margin-left: 156px;
+      }
+      .font-medium {
+        font-size: 15px;
       }
     }
   </style>
@@ -461,35 +464,61 @@
   <script>
     const notesData = {
       "9": [
+        //hindi grammar
         { title: "Bihar Deled Hindi Class 9", pdf: "asserts/PDFs/9th_hindi_grammar.pdf", subject: "Hindi Grammar", image: "asserts/9th_hindi.jpg" },
+        //english grammar
         { title: "Bihar Deled Maths Class 9", pdf: "asserts/PDFs/9th_english_grammar.pdf", subject: "English Grammar", image: "asserts/9th_maths.jpg" },
+        //maths
         { title: "Bihar Deled Maths Class 9", pdf: "asserts/PDFs/9th_maths.pdf", subject: "Maths", image: "asserts/9th_maths.jpg" },
+        //science
         { title: "Bihar Deled Maths Class 9", pdf: "asserts/PDFs/9th_science.pdf", subject: "Science", image: "asserts/9th_maths.jpg" },
+        //social science
         { title: "Bihar Deled Maths Class 9", pdf: "asserts/PDFs/9th_social_science.pdf", subject: "Social Science", image: "asserts/9th_maths.jpg" }
       ],
       "10": [
+        //hindi
         { title: "Bihar Deled Hindi Class 10", pdf: "asserts/PDFs/10th_hindi.pdf", subject: "Hindi", image: "asserts/10th_hindi.jpg" },
+        //hindi grammar
         { title: "Bihar Deled Maths Class 10", pdf: "asserts/PDFs/10th_hindi_grammar.pdf", subject: "Hindi Grammar", image: "asserts/10th_maths.jpg" },
+        //english grammar
         { title: "Bihar Deled Maths Class 10", pdf: "asserts/PDFs/10th_english_grammar.pdf", subject: "English Grammar", image: "asserts/10th_maths.jpg" },
-        { title: "Bihar Deled Maths Class 10", pdf: "asserts/PDFs/class_10th_math_1.pdf", subject: "Maths", image: "asserts/class_10th_math_1.png" },
-        { title: "Bihar Deled Maths Class 10", pdf: "asserts/PDFs/10th_science.pdf", subject: "Science", image: "asserts/10th_maths.jpg" },
-        { title: "Bihar Deled Maths Class 10", pdf: "asserts/PDFs/10th_social_science.pdf", subject: "Social Science", image: "asserts/10th_maths.jpg" },
+        //maths
+        { title: "Real Numbers: The Foundation of Mathematics || Class 10", pdf: "asserts/PDFs/class_10th_math_1.pdf", subject: "Maths", image: "asserts/class_10th_math_1.png" },
+        //science
+        { title: "Biology Chapter 1 | Life Processes", pdf: "asserts/PDFs/Class 10th Biology chapter 1.pdf", subject: "Science", image: "asserts/biology chapter 1.png" },
+        { title: "Biology Chapter 3 | Transportation (Pariwahan)", pdf: "asserts/PDFs/class 10th chepter 3 Biology.pdf", subject: "Science", image: "asserts/class 10th chepter 3 Biology.png" },
+        { title: "Biology Chapter 4 | उत्सजन तंत्र (EXCRETORY SYSTEM)", pdf: "asserts/PDFs/class 10th biology chapter 4.pdf", subject: "Science", image: "asserts/class 10th biology chapter 4.png" },
+        //social science
+        { title: "Bihar Deled Maths Class 10", pdf: "asserts/PDFs/Class 10th मृदा संसाधन नोट्स.pdf", subject: "Social Science", image: "asserts/Class 10th मृदा संसाधन नोट्स.png" },
+        //sanskrit
         { title: "Bihar Deled Maths Class 10", pdf: "asserts/PDFs/10th_sanskrit.pdf", subject: "Sanskrit", image: "asserts/10th_maths.jpg" }
       ],
       "11": [
+        //hindi
         { title: "Bihar Deled Hindi Class 11", pdf: "asserts/PDFs/11th_hindi.pdf", subject: "Hindi", image: "asserts/11th_hindi.jpg" },
+        //english
         { title: "Bihar Deled Maths Class 11", pdf: "asserts/PDFs/11th_english.pdf", subject: "English", image: "asserts/11th_maths.jpg" },
+        //maths
         { title: "Bihar Deled Maths Class 11", pdf: "asserts/PDFs/11th_maths.pdf", subject: "Maths", image: "asserts/11th_maths.jpg" },
+        //physics
         { title: "Bihar Deled Maths Class 11", pdf: "asserts/PDFs/11th_physics.pdf", subject: "Physics", image: "asserts/11th_maths.jpg" },
+        //chemistry
         { title: "Bihar Deled Maths Class 11", pdf: "asserts/PDFs/11th_chemistry.pdf", subject: "Chemistry", image: "asserts/11th_maths.jpg" },
+        //biology
         { title: "Bihar Deled Maths Class 11", pdf: "asserts/PDFs/11th_biology.pdf", subject: "Biology", image: "asserts/11th_maths.jpg" }
       ],
       "12": [
+        //hindi
         { title: "Bihar Deled Hindi Class 12", pdf: "asserts/PDFs/12th_hindi.pdf", subject: "Hindi", image: "asserts/12th_hindi.jpg" },
+        //english
         { title: "Bihar Deled Maths Class 12", pdf: "asserts/PDFs/12th_english.pdf", subject: "English", image: "asserts/12th_maths.jpg" },
+        //maths
         { title: "Bihar Deled Maths Class 12", pdf: "asserts/PDFs/12th_maths.pdf", subject: "Math", image: "asserts/12th_maths.jpg" },
+        //physics
         { title: "Bihar Deled Maths Class 12", pdf: "asserts/PDFs/12th_physics.pdf", subject: "Physics", image: "asserts/12th_maths.jpg" },
+        //chemistry
         { title: "Bihar Deled Maths Class 12", pdf: "asserts/PDFs/12th_chemistry.pdf", subject: "Chemistry", image: "asserts/12th_maths.jpg" },
+        //biology
         { title: "Bihar Deled Maths Class 12", pdf: "asserts/PDFs/12th_biology.pdf", subject: "Biology", image: "asserts/12th_maths.jpg" }
       ]
     };
